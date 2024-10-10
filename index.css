@@ -32,7 +32,7 @@ body{
     align-items: center;
     flex-direction: column;
     background: var(--grey800);
-    padding: 35px;
+    padding: 20px;
 }
 
 #socials-profile *{
@@ -85,4 +85,10 @@ body{
 
 #socials-links #last-item{
     margin: 0;
+}
+
+@media (min-width: 500px){
+    #socials-profile{
+        padding: 35px;
+    }
 }
