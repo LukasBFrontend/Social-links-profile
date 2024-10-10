@@ -1,0 +1,88 @@
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: inter;
+    src: url('assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+body{
+    /* center #socials-profile */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    /* affecting descendants */
+    background: var(--grey900);
+    font-family: inter;
+    font-size: 14px;
+    color: var(--white);
+}
+
+#socials-profile{
+    border-radius: 10px;
+    /* center  */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--grey800);
+    padding: 35px;
+}
+
+#socials-profile *{
+    margin: 0;
+}
+
+#portrait{
+    border-radius: 50%;
+    margin-bottom: 28px;
+    width: 80px;
+}
+
+#name{  
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#location{
+    margin-bottom: 10px;
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#description{
+    margin: 20px;
+    font-weight: 400;
+}
+
+#socials-links{
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+#socials-links li{
+    margin-bottom: 14px;
+    border-radius: 8px;
+    padding: 10px;
+    background: var(--grey700);
+    font-weight: 600;
+}
+
+#socials-links :hover{
+    background: var(--green);
+    color: var(--grey900);
+    cursor: pointer;
+}
+
+#socials-links #last-item{
+    margin: 0;
+}
